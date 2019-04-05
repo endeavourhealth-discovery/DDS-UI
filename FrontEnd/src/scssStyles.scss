@@ -1,0 +1,47 @@
+@import "~eds-angular4/assets/scss/endeavour";
+
+.dropdown-toggle-custom::after {
+  display:none;
+}
+
+a {
+  cursor: pointer;
+}
+
+$flash-light: #fff;
+$flash-dark: $theme-colour;
+
+@-webkit-keyframes argh-my-eyes {
+  0%   { border-color: $flash-light; }
+  49% { border-color: $flash-light; }
+  50% { border-color: $flash-dark; }
+  99% { border-color: $flash-dark; }
+  100% { border-color: $flash-light; }
+}
+@-moz-keyframes argh-my-eyes {
+  0%   { border-color: $flash-light; }
+  49% { border-color: $flash-light; }
+  50% { border-color: $flash-dark; }
+  99% { border-color: $flash-dark; }
+  100% { border-color: $flash-light; }
+}
+@keyframes argh-my-eyes {
+  0%   { border-color: $flash-light; }
+  49% { border-color: $flash-light; }
+  50% { border-color: $flash-dark; }
+  99% { border-color: $flash-dark; }
+  100% { border-color: $flash-light; }
+}
+
+.help-box {
+  position: fixed;
+  z-index: 2000;
+  padding: 8px;
+  border-radius: $border-radius;
+  border: 2px solid $flash-light;
+  background-color: $theme-lightest;
+  -webkit-animation: argh-my-eyes 1s infinite;
+  -moz-animation:    argh-my-eyes 1s infinite;
+  animation:         argh-my-eyes 1s infinite;
+}
+
